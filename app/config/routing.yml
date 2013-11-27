@@ -1,0 +1,5 @@
+vadim_home:
+    resource: "@VadimHomeBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
