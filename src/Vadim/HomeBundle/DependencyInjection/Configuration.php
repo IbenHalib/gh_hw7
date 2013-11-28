@@ -4,6 +4,7 @@ namespace Vadim\HomeBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
+use Vadim\HomeBundle\MyDbMails;
 
 /**
  * This is the class that validates and merges configuration from your app/config files
