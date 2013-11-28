@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+
+    <parameters>
+        <parameter key="vadim_home.example.class">Vadim\HomeBundle\MyDbMails</parameter>
+    </parameters>
+
+    <services>
+        <service id="vadim_home.exampler" class="%vadim_home.example.class%">
+            <argument id="mailer" type="service" />
+            <call method="setDoctrine">
+              <argument id="doctrine" type="service" on-invalid="ignore" />
+            </call>
+        </service>
+    </services>
+
+</container>
